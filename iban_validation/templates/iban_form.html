@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% load bootstrap3 %}
+{% block title %}RegioHelden Test Project{% endblock %}
+{% block content %}
+	<form method="POST">
+		{% csrf_token %}
+		{% bootstrap_form form %}
+		{% buttons submit='OK' reset="Cancel" %}{% endbuttons %}
+	</form>
+{% endblock content %}

@@ -1,10 +1,8 @@
-from django.conf.urls import patterns, include, url
-from django.contrib import admin
+from django.conf.urls import patterns, url
 
-urlpatterns = patterns('',
-    # Examples:
-    # url(r'^$', 'iban_validation.views.home', name='home'),
-    # url(r'^blog/', include('blog.urls')),
+from .views import IbanSwiftView
 
-    url(r'^admin/', include(admin.site.urls)),
+urlpatterns = patterns(
+    '',
+    url(r'^$', IbanSwiftView.as_view(), name='home'),
 )
