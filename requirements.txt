@@ -1,4 +1,4 @@
-Django==1.7.1
+Django==1.11.29
 django-bootstrap3==4.11.0
 django-countries==3.0
 django-iban==0.3.0
